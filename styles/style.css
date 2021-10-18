@@ -231,6 +231,7 @@ body {
 } */
 
 .callMeMaybe {
+	display: none;
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
@@ -1377,6 +1378,9 @@ main {
 
 	.directions {
 		margin-top: 350px;
+	}
+	.callMeMaybe {
+		display: inline-block;
 	}
 }
 
