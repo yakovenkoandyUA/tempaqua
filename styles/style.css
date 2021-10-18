@@ -209,27 +209,37 @@ body {
 	z-index: 2;
 }
 
-/* .line {
-  width: 30px;
-  height: 3px;
-  background: var(--typography__primary-color);
-  margin: 5px;
+.line {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .line.top {
-  transform: rotate(45deg) translate(11px, 0px);
+  -webkit-transform: rotate(45deg) translate(11px, 0px);
+     -moz-transform: rotate(45deg) translate(11px, 0px);
+      -ms-transform: rotate(45deg) translate(11px, 0px);
+       -o-transform: rotate(45deg) translate(11px, 0px);
+          transform: rotate(45deg) translate(11px, 0px);
 }
 
 .line.bot {
-  transform: rotate(-45deg) translate(10px, 0px);
+  -webkit-transform: rotate(-45deg) translate(10px, 0px);
+     -moz-transform: rotate(-45deg) translate(10px, 0px);
+      -ms-transform: rotate(-45deg) translate(10px, 0px);
+       -o-transform: rotate(-45deg) translate(10px, 0px);
+          transform: rotate(-45deg) translate(10px, 0px);
 }
 
 .line.medium {
-  transform: translateX(-80px);
+  -webkit-transform: translateX(-80px);
+     -moz-transform: translateX(-80px);
+      -ms-transform: translateX(-80px);
+       -o-transform: translateX(-80px);
+          transform: translateX(-80px);
   opacity: 0;
-} */
-
+} 
 .callMeMaybe {
 	display: none;
 	position: fixed;
@@ -527,6 +537,7 @@ main {
 }
 
 .works__list--title {
+	margin-top: 1em;
 	margin-bottom: 2.125em;
 	font-weight: 700;
 	font-size: -webkit-calc(18 / var(--main__fontSize) * 1rem);
@@ -627,6 +638,10 @@ main {
 
 .equipment__tabs-content {
 	overflow: hidden;
+		-webkit-flex-basis: 55%;
+		    -ms-flex-preferred-size: 55%;
+		        flex-basis: 55%;
+		position: relative;
 }
 
 .equipment__list-tab--item-wrapper {
@@ -647,24 +662,27 @@ main {
 	        align-items: center;
 }
 
-.equipment__tabs-content {
-	-webkit-flex-basis: 55%;
-	    -ms-flex-preferred-size: 55%;
-	        flex-basis: 55%;
-}
+
 
 .tabs__content {
 	max-width: 840px;
-	display: none;
-	height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .tabs__content.active {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
+	opacity: 1;
 }
 
 .tabs__content--img {
@@ -881,24 +899,15 @@ main {
 .services__form--title {
 	margin-bottom: 1.5em;
 	font-weight: 700;
-	font-size: -webkit-calc(28 / var(--main__fontSize) * 1rem);
-	font-size: -moz-calc(28 / var(--main__fontSize) * 1rem);
-	font-size: calc(28 / var(--main__fontSize) * 1rem);
-	line-height: -webkit-calc(24 / var(--main__fontSize) * 1rem);
-	line-height: -moz-calc(24 / var(--main__fontSize) * 1rem);
-	line-height: calc(24 / var(--main__fontSize) * 1rem);
+	font-size: 28px;
+	line-height: 24px;
 	color: var(--primary-color);
 }
 
 .services__form--subtitle {
 	margin-bottom: 1.875em;
 	font-weight: 700;
-	font-size: -webkit-calc(18 / var(--main__fontSize) * 1rem);
-	font-size: -moz-calc(18 / var(--main__fontSize) * 1rem);
-	font-size: calc(18 / var(--main__fontSize) * 1rem);
-	line-height: -webkit-calc(22 / var(--main__fontSize) * 1rem);
-	line-height: -moz-calc(22 / var(--main__fontSize) * 1rem);
-	line-height: calc(22 / var(--main__fontSize) * 1rem);
+	font-size: 16px;
 	color: var(--typography__primary-color);
 }
 
@@ -1286,6 +1295,17 @@ main {
 	.tabs__content--article {
 		color: var(--typography__primary-color);
 	}
+	.tabs__content {
+		position: static;
+		display: none;
+	}
+	.tabs__content.active {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
 }
 
 @media (max-width: 800px) {
@@ -1310,6 +1330,7 @@ main {
 	}
 
 	.services__form--title {
+		font-size: 24px;
 		line-height: 42px;
 	}
 
@@ -1348,7 +1369,7 @@ main {
 	}
 
 	.tabs__content--img img {
-		width: inherit;
+		width: 100%;
 	}
 
 	.advantages__wrapper {
@@ -1490,7 +1511,7 @@ main {
 	}
 
 	.services__form {
-		padding: 3.75em 2em;
+		padding: 3.75em 1em;
 		margin-top: 100px;
 	}
 
