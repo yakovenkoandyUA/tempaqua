@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AQUA SMART Centre</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png"/>
+  <link rel="manifest" href="./static/favicon/site.webmanifest"/>
+  <link rel="mask-icon" href="./static/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+  <meta name="msapplication-TileColor" content="#ffc40d"/>
+  <meta name="theme-color" content="#ffffff"/>
+
+  <!-- <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/fonts.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+<header>
+  <div class="header__info">
+    <div class="container header__info-wrapper">
+      <img data-svg="location" alt="location"/>
+      <a href="https://goo.gl/maps/J73FTrCyR31YhDPNA" target="_blank" class="header__address"
+      ><span>м. Київ</span> Софіївська Борщагівка, вул. Київська, 3</a
+      >
+    </div>
+  </div>
+  <nav class="nav container">
+    <a href="#" class="nav__title">
+      <img data-svg="logo" alt="logo"/>
+      <img data-svg="logoS" alt="logo"/>
+    </a>
+    <div class="hamburger">
+      <img src="./assets/images/burger.jpg" alt="burger">
+    </div>
+    <ul class="menu">
+      <li class="menu__item"><a href="#aboutUs" class="menu__link">Про нас</a></li>
+      <li class="menu__item"><a href="#equipment" class="menu__link">Обладнання</a></li>
+      <li class="menu__item"><a href="#services" class="menu__link">Послуги</a></li>
+      <li class="menu__item"><a href="#advantages" class="menu__link">Переваги</a></li>
+      <li class="menu__item"><a href="#footer" class="menu__link">Контакти</a></li>
+    </ul>
+    <div class="nav__tel-numbers">
+      <a href="tel: 0504191066" class="nav__tel-items">
+        <img data-svg="phone" alt="phone"/>
+        (050) 419-10-66
+      </a>
+      <a href="tel: 0931856519" class="nav__tel-items">
+        <img data-svg="phone" alt="phone"/>
+        (093) 185-65-19
+      </a>
+      <div class="menu__icon">
+        <a href="https://www.facebook.com/aquasmart.kiev/" target="_blank"><img data-svg="facebookMenu" alt="facebook"></a>
+        <a href="https://www.instagram.com/invites/contact/?i=sbibsu8heanj&utm_content=mrgq5cc" target="_blank"><img
+          data-svg="instagramMenu" alt="instagram"></a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="callMeMaybe">
+    <img data-svg="phoneBtn" alt="phone">
+  </div>
+  <section  class="hero">
+    <div class="hero__wrapper">
+      <div class="container">
+        <h1 class="hero__title">
+          Здорова та безпечна вода. Іноваційні сучасні рішення для опалення та водопостачання
+        </h1>
+        <p class="hero__desc">
+          Продаж обладнання, проектування, комплектація об’єктів, монтаж та сервісне
+          обслуговування
+        </p>
+        <a class="hero__link" href="#form">Отримати консультацію</a>
+      </div>
+    </div>
+  </section>
+  <section id="advantages" class="advantages">
+    <ul class="container advantages__wrapper">
+      <li class="advantages__item">
+        <img data-svg="leader" alt="leader"/>
+        <p class="advantages__text">
+          Більше 5 років<br/>
+          досвіду
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img data-svg="group" alt="group"/>
+        <p class="advantages__text">
+          Команда досвідчених<br/>
+          професіоналів
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img data-svg="like" alt="like"/>
+        <p class="advantages__text">
+          Якісне та інноваційне<br/>
+          обладнання
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img data-svg="shield" alt="shield"/>
+        <p class="advantages__text">
+          Гарантія та<br/>
+          обслуговування
+        </p>
+      </li>
+      <li class="advantages__item">
+        <img data-svg="money" alt="money"/>
+        <p class="advantages__text">Краща якість за<br> зрозумілу ціну</p>
+      </li>
+    </ul>
+  </section>
+  <section id="aboutUs" class="aboutUs">
+    <div class="container">
+      <h2 class=" section__title section__title--aboutUs">Про нас</h2>
+
+    </div>
+    <div class="container aboutUs__wrapper">
+      <div class="aboutUs__explanation">
+        <p class="aboutUs__explanation--text">
+          <span>AQUA SMART Centre –</span> молода українська компанія, яка поєднує в собі такі
+          якості як необхідний базовий досвід та новітні знання про сучасні технології.
+        </p>
+        <picture class="aboutUs__explanation--img">
+          <source media="(max-width: 1600px)" srcset="./assets/images/about__us-md.jpg"/>
+          <source media="(max-width: 335px)" srcset="./assets/images/about__us-s.jpg"/>
+          <img src="./assets/images/about__us.jpg" alt="about__us"/>
+        </picture>
+      </div>
+      <div class="aboutUs__description">
+        <p class="aboutUs__description--text">
+          <span>Наша основна мета</span> іти в ногу з часом та пропонувати сучасне та
+          інноваційне обладнання від кращих світових виробників, для того щоб допомагати людям в
+          створенні комфорту, затишку та безпеки в їхніх оселях, а також зберегти кошти за
+          рахунок енергоефективності.
+        </p>
+        <p class="aboutUs__description--text">
+          Сучасний світ дуже швидко змінюється, так само як і обладнання для систем опалення та
+          водопостачання постійно вдосконалюється.
+        </p>
+        <p class="aboutUs__description--text">
+          Наша команда тримає руку на пульсі та постійно відслідковує новітні тренди, щоб мати
+          можливість запропонувати тільки найкращі та енергоефективні рішення.
+        </p>
+        <p class="aboutUs__description--text">
+          Хочете так само бути в тренді сучасних технологій – звертайтеся і ми підкажемо як
+          отримати максимальний комфорт життя для вашої родини.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="directions">
+    <div class="container directions__wrapper">
+      <div>
+        <h2 class="section__title">Основні напрямки діяльності</h2>
+        <ul class="directions__list">
+          <li class="directions__list--item">
+            Сучасні автоматизовані котельні та системи опалення «під ключ»
+          </li>
+          <li class="directions__list--item">
+            Професійні системи очищення води для дома, квартири та комерційних цілей
+          </li>
+          <li class="directions__list--item">
+            Інноваційні рішення для холодного та гарячого водопостачання
+          </li>
+          <li class="directions__list--item">Системи з альтернативними джерелами енергії</li>
+          <li class="directions__list--item">Розумний будинок: автоматизація та безпека</li>
+        </ul>
+      </div>
+      <picture>
+        <source media="(max-width: 1100px)" srcset="./assets/images/house-md.png"/>
+        <img class="directions__picture" src="./assets/images/house-lg.png" alt="house"/>
+      </picture>
+    </div>
+  </section>
+  <section class="works">
+    <div class="container works__wrapper">
+      <h2 class="section__title section__title--works">Як ми працюємо</h2>
+      <ul class="works__list">
+        <li class="works__list--item">
+          <img
+            src="./assets/images/works/projection.png"
+            alt="projection"
+            class="works__list--img"
+          />
+          <h3 class="works__list--title">Проектування</h3>
+          <p class="works__list--text">
+            Точний та правильно зроблений проект може <span>заощадити до 50% коштів</span>
+          </p>
+        </li>
+        <li class="works__list--item">
+          <img
+            src="./assets/images/works/delivery.png"
+            alt="delivery"
+            class="works__list--img"
+          />
+          <h3 class="works__list--title">Поставка обладнання</h3>
+          <p class="works__list--text">
+            Працюємо лише з перевіреними та надійними постачальниками, які пропонують якісну та
+            оригінальну продукцію
+          </p>
+        </li>
+        <li class="works__list--item">
+          <img src="./assets/images/works/configuration.png" alt="" class="works__list--img"/>
+          <h3 class="works__list--title">Монтаж</h3>
+          <p class="works__list--text">
+            Якісний професійний монтаж забезпечить довготривале життя обладнанню та всій системі
+            в цілому
+          </p>
+        </li>
+        <li class="works__list--item">
+          <img src="./assets/images/works/select.png" alt="select" class="works__list--img"/>
+          <h3 class="works__list--title">Обслуговування та сервіс</h3>
+          <p class="works__list--text">
+            Продовжує строк служби обладнання та дозволяє безперервно насолоджуватися комфортний
+            життям
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="equipment" class="equipment">
+    <div class="container equipment__wrapper">
+      <h2 class="section__title">Обладнання</h2>
+      <div class="equipment__tabs">
+        <ul class="equipment__list-tab">
+          <li data-id="1" class="equipment__list-tab--item">
+            <div class="equipment__list-tab--item-wrapper">
+									<span data-id="1" class="equipment__list-tab--item-text active">
+										Системи опалення</span
+                  >
+              <img data-svg="arrow" alt="arrow"/>
+            </div>
+            <div data-content="1" class="tabs__content" hidden>
+              <div class="tabs__content--img">
+                <img src="./assets/images/tabs/01__tab.png" alt="module"/>
+              </div>
+              <article class="tabs__content--article">
+                <h3 class="tabs__content--title">Системи опалення</h3>
+                <ul class="tabs__content--list">
+                  <li class="tabs__content--list-item">
+                    Газові, твердопаливні та електричні котельні
+                  </li>
+                  <li class="tabs__content--list-item">
+                    Насосні групи та розподільчі колектори
+                  </li>
+                  <li class="tabs__content--list-item">Теплі підлоги та стіни</li>
+                  <li class="tabs__content--list-item">Радіаторне опалення</li>
+                </ul>
+                <p class="tabs__content--text">
+                  Конденсаційні газові котли – це сучасна енергоефективна опалювальна техніка,
+                  основна перевага використання якої - скорочення витрат на опалення та ГВП.
+                </p>
+                <p class="tabs__content--text">
+                  Системи теплих підлог та стін — це сучасне рішення, що економить
+                  електроенергію та забезпечує комфорт вашої оселі. А ще надає естетичного
+                  вигляду приміщенню через відсутність опалювальних приладів.
+                </p>
+              </article>
+            </div>
+          </li>
+          <li data-id="2" class="equipment__list-tab--item">
+            <div class="equipment__list-tab--item-wrapper">
+									<span data-id="2" class="equipment__list-tab--item-text">
+										Cистеми з альтернативними джерелами енергії</span
+                  >
+              <img data-svg="arrow" alt="arrow"/>
+            </div>
+            <div data-content="2" class="tabs__content" hidden>
+              <div class="tabs__content--img">
+                <img
+                  class="tabs__content--img"
+                  src="./assets/images/tabs/02__tab.png"
+                  alt="module__02"
+                />
+              </div>
+              <article class="tabs__content--article">
+                <h3 class="tabs__content--title">
+                  Системи з альтернативними джерелами енергії
+                </h3>
+                <ul class="tabs__content--list">
+                  <li class="tabs__content--list-item">Системи з тепловими насосами</li>
+                  <li class="tabs__content--list-item">Геліосистеми для нагріву води</li>
+                </ul>
+                <p class="tabs__content--text">
+                  Теплові насоси – це інноваційні енергоефективні рішення, які допоможуть
+                  мінімізувати витрати на опалення і створити максимальний рівень комфорту.
+                  Забезпечують найбільшу автономність їх власнику, дають можливість значно
+                  скоротити споживання газу та уникнути турбот з сервісною службою.
+                </p>
+                <p class="tabs__content--text">
+                  Сонячні колектори дозволяють скоротити енерговитрати на нагрів води до 70%.
+                  Допоможуть підігріти басейн та здійснити підтримку системи опалення.
+                </p>
+              </article>
+            </div>
+          </li>
+          <li data-id="3" class="equipment__list-tab--item">
+            <div class="equipment__list-tab--item-wrapper">
+									<span data-id="3" class="equipment__list-tab--item-text">
+										Автоматизація та безпека систем опалення та водопостачання</span
+                  >
+              <img data-svg="arrow" alt="arrow"/>
+            </div>
+            <div data-content="3" class="tabs__content" hidden>
+              <div class="tabs__content--img">
+                <img
+                  class="tabs__content--img"
+                  src="./assets/images/tabs/03__tab.png"
+                  alt="module"
+                />
+              </div>
+              <article class="tabs__content--article">
+                <h3 class="tabs__content--title">
+                  Автоматизація та безпека систем опалення та водопостачання
+                </h3>
+                <ul class="tabs__content--list">
+                  <li class="tabs__content--list-item">Програматори</li>
+                  <li class="tabs__content--list-item">Термостати</li>
+                  <li class="tabs__content--list-item">Терморегулятори</li>
+                  <li class="tabs__content--list-item">Системи захисту від протікання води</li>
+                </ul>
+                <p class="tabs__content--text">
+                  Використання автоматики в системі опалення – це насамперед відчутне зниження
+                  витрат на утримання житла. Такі системи дозволяють додатково економити до
+                  20-30% на використанні енергоносіїв. Додатково надає можливість віддаленого
+                  керування системою та можливість провести регулювання температурного режиму
+                  системи в будь-який момент і скорегувати його в кілька рухів руки.
+                </p>
+              </article>
+            </div>
+          </li>
+          <li data-id="4" class="equipment__list-tab--item">
+            <div class="equipment__list-tab--item-wrapper">
+									<span data-id="4" class="equipment__list-tab--item-text">
+										Системи очищення води та водопідготовка</span
+                  >
+              <img data-svg="arrow" alt="arrow"/>
+            </div>
+            <div data-content="4" class="tabs__content" hidden>
+              <div class="tabs__content--img">
+                <img
+                  class="tabs__content--img"
+                  src="./assets/images/tabs/04__tab.png"
+                  alt="module"
+                />
+              </div>
+              <article class="tabs__content--article">
+                <h3 class="tabs__content--title">Системи очищення води та водопідготовка</h3>
+                <ul class="tabs__content--list">
+                  <li class="tabs__content--list-item">
+                    Фільтри знезалізнення та пом’якшення води
+                  </li>
+                  <li class="tabs__content--list-item">Фільтри зворотного осмосу</li>
+                  <li class="tabs__content--list-item">ТМагістральні фільтри</li>
+                  <li class="tabs__content--list-item">
+                    Змінні картриджі та витратні матеріали
+                  </li>
+                </ul>
+                <p class="tabs__content--text">
+                  Системи комплексної очистки води призначені для видалення великих концентрацій
+                  заліза, марганцю і різних видів домішок, присутніх у воді. Використання такого
+                  обладнання дозволяє відчути комфорт з першого дня – чиста і здорова вода
+                  завжди під рукою, побутова техніка, сантехнічні прилади та система опалення
+                  працюватимуть надійніше та довше. Система очищення підбирається окремо для
+                  кожного клієнта на основі лабораторного аналізу води.
+                </p>
+              </article>
+            </div>
+          </li>
+          <li data-id="5" class="equipment__list-tab--item">
+            <div class="equipment__list-tab--item-wrapper">
+									<span data-id="5" class="equipment__list-tab--item-text">
+										Насосне обладнання</span
+                  >
+              <img data-svg="arrow" alt="arrow"/>
+            </div>
+            <div data-content="5" class="tabs__content" hidden>
+              <div class="tabs__content--img">
+                <img
+                  class="tabs__content--img"
+                  src="./assets/images/tabs/05__tab.png"
+                  alt="module"
+                />
+              </div>
+              <article class="tabs__content--article">
+                <h3 class="tabs__content--title">Насосне обладнання</h3>
+                <ul class="tabs__content--list">
+                  <li class="tabs__content--list-item">Енергоефективні насоси</li>
+                  <li class="tabs__content--list-item">Насосні станції</li>
+                  <li class="tabs__content--list-item">Свердловинні насоси</li>
+                  <li class="tabs__content--list-item">Циркуляційні насоси для опалення</li>
+                </ul>
+                <p class="tabs__content--text">
+                  Застосування енергоефективного насосного обладнання дозволить більш ніж в два
+                  рази скоротити витрати на електроенергію та отримати додатковий комфорт від їх
+                  використання. А також такі насоси додатково оснащені різними типами захистів,
+                  що дозволить зберегти їх працездатність при аварійних ситуаціях.
+                </p>
+              </article>
+            </div>
+          </li>
+          <li data-id="6" class="equipment__list-tab--item">
+            <div class="equipment__list-tab--item-wrapper">
+									<span data-id="6" class="equipment__list-tab--item-text">
+										Насосні станції для комерційного призначення</span
+                  >
+              <img data-svg="arrow" alt="arrow"/>
+            </div>
+            <div data-content="6" class="tabs__content" hidden>
+              <div class="tabs__content--img">
+                <img
+                  class="tabs__content--img"
+                  src="./assets/images/tabs/06__tab.png"
+                  alt="module"
+                />
+              </div>
+              <article class="tabs__content--article tabs__content--article-last">
+                <h3 class="tabs__content--title">
+                  Насосні станції для комерційного призначення
+                </h3>
+
+                <p class="tabs__content--text">
+                  Виробництво насосних станцій для господарчо-питного водопостачання
+                  індивідуально під потреби Замовника
+                </p>
+              </article>
+            </div>
+          </li>
+        </ul>
+        <div class="equipment__steps">
+          <div class="equipment__steps--line"></div>
+        </div>
+        <div class="equipment__tabs-content">
+          <div data-content="1" class="tabs__content active">
+            <div class="tabs__content--img">
+              <img src="./assets/images/tabs/01__tab.png" alt="module"/>
+            </div>
+            <article class="tabs__content--article">
+              <h3 class="tabs__content--title">Системи опалення</h3>
+              <ul class="tabs__content--list">
+                <li class="tabs__content--list-item">
+                  Газові, твердопаливні та електричні котельні
+                </li>
+                <li class="tabs__content--list-item">Насосні групи та розподільчі колектори</li>
+                <li class="tabs__content--list-item">Теплі підлоги та стіни</li>
+                <li class="tabs__content--list-item">Радіаторне опалення</li>
+              </ul>
+              <p class="tabs__content--text">
+                Конденсаційні газові котли – це сучасна енергоефективна опалювальна техніка,
+                основна перевага використання якої - скорочення витрат на опалення та ГВП.
+              </p>
+              <p class="tabs__content--text">
+                Системи теплих підлог та стін — це сучасне рішення, що економить електроенергію
+                та забезпечує комфорт вашої оселі. А ще надає естетичного вигляду приміщенню
+                через відсутність опалювальних приладів.
+              </p>
+            </article>
+          </div>
+          <div data-content="2" class="tabs__content">
+            <div class="tabs__content--img">
+              <img
+                class="tabs__content--img"
+                src="./assets/images/tabs/02__tab.png"
+                alt="module__02"
+              />
+            </div>
+            <article class="tabs__content--article">
+              <h3 class="tabs__content--title">Системи з альтернативними джерелами енергії</h3>
+              <ul class="tabs__content--list">
+                <li class="tabs__content--list-item">Системи з тепловими насосами</li>
+                <li class="tabs__content--list-item">Геліосистеми для нагріву води</li>
+              </ul>
+              <p class="tabs__content--text">
+                Теплові насоси – це інноваційні енергоефективні рішення, які допоможуть
+                мінімізувати витрати на опалення і створити максимальний рівень комфорту.
+                Забезпечують найбільшу автономність їх власнику, дають можливість значно
+                скоротити споживання газу та уникнути турбот з сервісною службою.
+              </p>
+              <p class="tabs__content--text">
+                Сонячні колектори дозволяють скоротити енерговитрати на нагрів води до 70%.
+                Допоможуть підігріти басейн та здійснити підтримку системи опалення.
+              </p>
+            </article>
+          </div>
+          <div data-content="3" class="tabs__content">
+            <div class="tabs__content--img">
+              <img
+                class="tabs__content--img"
+                src="./assets/images/tabs/03__tab.png"
+                alt="module"
+              />
+            </div>
+            <article class="tabs__content--article">
+              <h3 class="tabs__content--title">
+                Автоматизація та безпека систем опалення та водопостачання
+              </h3>
+              <ul class="tabs__content--list">
+                <li class="tabs__content--list-item">Програматори</li>
+                <li class="tabs__content--list-item">Термостати</li>
+                <li class="tabs__content--list-item">Терморегулятори</li>
+                <li class="tabs__content--list-item">Системи захисту від протікання води</li>
+              </ul>
+              <p class="tabs__content--text">
+                Використання автоматики в системі опалення – це насамперед відчутне зниження
+                витрат на утримання житла. Такі системи дозволяють додатково економити до 20-30%
+                на використанні енергоносіїв. Додатково надає можливість віддаленого керування
+                системою та можливість провести регулювання температурного режиму системи в
+                будь-який момент і скорегувати його в кілька рухів руки.
+              </p>
+            </article>
+          </div>
+          <div data-content="4" class="tabs__content">
+            <div class="tabs__content--img">
+              <img
+                class="tabs__content--img"
+                src="./assets/images/tabs/04__tab.png"
+                alt="module"
+              />
+            </div>
+            <article class="tabs__content--article">
+              <h3 class="tabs__content--title">Системи очищення води та водопідготовка</h3>
+              <ul class="tabs__content--list">
+                <li class="tabs__content--list-item">
+                  Фільтри знезалізнення та пом’якшення води
+                </li>
+                <li class="tabs__content--list-item">Фільтри зворотного осмосу</li>
+                <li class="tabs__content--list-item">ТМагістральні фільтри</li>
+                <li class="tabs__content--list-item">Змінні картриджі та витратні матеріали</li>
+              </ul>
+              <p class="tabs__content--text">
+                Системи комплексної очистки води призначені для видалення великих концентрацій
+                заліза, марганцю і різних видів домішок, присутніх у воді. Використання такого
+                обладнання дозволяє відчути комфорт з першого дня – чиста і здорова вода завжди
+                під рукою, побутова техніка, сантехнічні прилади та система опалення
+                працюватимуть надійніше та довше. Система очищення підбирається окремо для
+                кожного клієнта на основі лабораторного аналізу води.
+              </p>
+            </article>
+          </div>
+          <div data-content="5" class="tabs__content">
+            <div class="tabs__content--img">
+              <img
+                class="tabs__content--img"
+                src="./assets/images/tabs/05__tab.png"
+                alt="module"
+              />
+            </div>
+            <article class="tabs__content--article">
+              <h3 class="tabs__content--title">Насосне обладнання</h3>
+              <ul class="tabs__content--list">
+                <li class="tabs__content--list-item">Енергоефективні насоси</li>
+                <li class="tabs__content--list-item">Насосні станції</li>
+                <li class="tabs__content--list-item">Свердловинні насоси</li>
+                <li class="tabs__content--list-item">Циркуляційні насоси для опалення</li>
+              </ul>
+              <p class="tabs__content--text">
+                Застосування енергоефективного насосного обладнання дозволить більш ніж в два
+                рази скоротити витрати на електроенергію та отримати додатковий комфорт від їх
+                використання. А також такі насоси додатково оснащені різними типами захистів, що
+                дозволить зберегти їх працездатність при аварійних ситуаціях.
+              </p>
+            </article>
+          </div>
+          <div data-content="6" class="tabs__content">
+            <div class="tabs__content--img">
+              <img
+                class="tabs__content--img"
+                src="./assets/images/tabs/06__tab.png"
+                alt="module"
+              />
+            </div>
+            <article class="tabs__content--article tabs__content--article-last">
+              <h3 class="tabs__content--title tabs__content--title-last">Насосні станції для комерційного
+                призначення</h3>
+
+              <p class="tabs__content--text">
+                Виробництво насосних станцій для господарчо-питного водопостачання індивідуально
+                під потреби Замовника
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="collaboration">
+    <div class="container collaboration__wrapper">
+      <h2 class="section__title">Переваги співпраці з нами</h2>
+      <ul class="collaboration__list">
+        <li class="collaboration__item">
+          <h3 class="collaboration__item--title">
+            <!-- <img src="./assets/images/svg/check.svg" alt="check"> -->
+            Індивідуальний та гнучкий підхід до кожного клієнта
+          </h3>
+          <p class="collaboration__item--text">
+            Це дає можливість правильно підібрати обладнання саме під потреби Замовника, що
+            дозволяє зберегти кошти та створити баланс між ефективністю та комфортом
+          </p>
+        </li>
+        <li class="collaboration__item">
+          <h3 class="collaboration__item--title">Команда досвідчених монтажників</h3>
+          <p class="collaboration__item--text">
+            Виконаємо монтаж та запуск обладнання в експлуатацію. Ми співпрацюємо зі
+            спеціалістами, які мають багаторічний досвід монтажу інженерних систем та досвід
+            багатьох реалізованих об’єктів
+          </p>
+        </li>
+        <li class="collaboration__item">
+          <h3 class="collaboration__item--title">Управління проектом</h3>
+          <p class="collaboration__item--text">
+            Позбавимо вас від рутини та візьмемо організацію з управління проектом на себе
+          </p>
+        </li>
+        <li class="collaboration__item">
+          <h3 class="collaboration__item--title">Відповідальність</h3>
+          <p class="collaboration__item--text">
+            За підбір обладнання та запропоноване рішення, високу якість робіт та терміни
+            виконання
+          </p>
+        </li>
+        <li class="collaboration__item">
+          <h3 class="collaboration__item--title">
+            Тільки інноваційні рішення та світові стандарти якості
+          </h3>
+          <p class="collaboration__item--text">
+            Завдяки багаторічному досвіду ми пропонуємо тільки перевірене та надійне обладнання,
+            яке відповідає світовим стандартам якості
+          </p>
+        </li>
+        <li class="collaboration__item">
+          <h3 class="collaboration__item--title">Якісна інформаційна та сервісна підтримка</h3>
+          <p class="collaboration__item--text">
+            Ми завжди на зв’язку та готові допомогти у вирішенні ваших питань, наша головна мета
+            – це задоволений клієнт
+          </p>
+        </li>
+      </ul>
+      <picture>
+        <source media="max-width: 1100px" srcset="./assets/images/advantage__bgi.png"/>
+        <source media="max-width: 420px" srcset="./assets/images/advantage__bgi-s.png"/>
+        <img class="collaboration__img" src="./assets/images/advantage__bgi-lg.png" alt="advatage human"/>
+      </picture>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <div class="container services__wrapper">
+      <h2 class="section__title">Наші послуги підійдуть для таких типів об’єктів</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <img
+            data-svg="home"
+            alt="home"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Котеджі та житлові будинки</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="market"
+            alt="market"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Магазини, офіси, торгівельні центри</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="gasoline"
+            alt="gasoline"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Автозаправні комплекси та автомийки</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="hospitalBuildings"
+            alt="hospital-buildings"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Лікарні та лікувальні установи</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="school"
+            alt="school"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Шкільні та дошкільні навчальні заклади</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="sklad"
+            alt="sklad"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Виробничі приміщення та склади</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="coffeeShop"
+            alt="coffee-shop"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Готелі, кафе та ресторани</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="dumbbell"
+            alt="dumbbell"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Спортзали та фітнес центри</h5>
+        </li>
+        <li class="services__item">
+          <img
+            data-svg="ferma"
+            alt="ferma"
+            class="services__item--logo"
+          />
+          <h5 class="services__item--title">Фермерські та тепличні господарства</h5>
+        </li>
+      </ul>
+
+      <div class="services__form">
+        <h3 class="services__form--title">Хочете бути в тренді сучасних технологій?</h3>
+        <h6 class="services__form--subtitle">Напишіть нам:</h6>
+        <form  id="form" class="services__form--wrapper">
+          <label class="services__form--label"
+          ><input id="name" name="name" placeholder="Ваше ім’я" class="services__form--field" type="text"
+          /></label>
+          <label class="services__form--label"
+          ><input id="phone" name="phone" placeholder="Телефон" class="services__form--field" type="text"
+          /></label>
+          <label class="services__form--label"
+          ><input id="email" name="email" placeholder="E-mail" class="services__form--field" type="email"
+          /></label>
+          <button class="services__form--submit services__form--submit-hidden" type="submit">
+            Отримати консультацію
+          </button>
+          <div style="width:100%">
+            <button class="services__form--submit services__form--submit-show" type="submit">
+              Отримати консультацію
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="footer" class="footer">
+  <div class="container footer__wrapper">
+    <h2 class="section__title section__title--footer">Контакти</h2>
+    <ul class="footer__lists">
+      <li class="footer__lists--item">
+        <h3 class="footer__lists--title">Адреса:</h3>
+        <div class="footer__lists--wrapper">
+          <img data-svg="location" alt="location"/>
+          <div class="footer__lists--info">
+            <p class="footer__lists--info-text">
+              м. Київ Софіївська Борщагівка, вул. Київська, 3
+            </p>
+            <a
+              class="footer__lists--info-link"
+              href="https://goo.gl/maps/J73FTrCyR31YhDPNA"
+              target="_blank"
+            >Знайти на карті</a
+            >
+          </div>
+        </div>
+      </li>
+      <li class="footer__lists--item">
+        <h3 class="footer__lists--title">E-mail:</h3>
+        <a class="footer__lists--wrapper" href="mailto: ascentre.kiev@gmail.com">
+          <img data-svg="mail" alt="mail"/>
+          <p class="footer__lists--info-text">ascentre.kiev@gmail.com</p>
+        </a>
+      </li>
+      <li class="footer__lists--item">
+        <h3 class="footer__lists--title">Телефони:</h3>
+        <a class="footer__lists--link" href="tel: 0504191066"
+        ><img data-svg="phone" alt="phone"/>(050) 419-10-66</a
+        >
+        <a class="footer__lists--link" href="tel: 0931856519"
+        ><img data-svg="phone" alt="phone"/>(093) 185-65-19</a
+        >
+      </li>
+      <li class="footer__lists--item">
+        <h3 class="footer__lists--title">Слідкуйте за нами в соціальних мережах:</h3>
+        <div class="footer__lists--info">
+          <a href="https://www.facebook.com/aquasmart.kiev/" target="_blank"><img data-svg="facebook"
+                                                                                  alt="facebook"/></a>
+          <a href="https://www.instagram.com/aquasmart_kiev/" target="_blank"><img
+            data-svg="instagram" alt="instagram"/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</footer>
+<p class="footer__copyright">© 2021. Aqua Smart Centre. Всі права захищені</p>
+<script src="./js/index.js"></script>
+</body>
+</html>
